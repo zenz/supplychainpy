@@ -8287,7 +8287,7 @@ static CYTHON_INLINE PyObject * __Pyx_PyCFunction_FastCall(PyObject *func_obj, P
        because it may clear it (directly or indirectly) and so the
        caller loses its exception */
     assert(!PyErr_Occurred());
-    return (*((__Pyx_PyCFunctionFast)meth)) (self, args, nargs, NULL);
+    return (*((__Pyx_PyCFunctionFast)meth)) (self, args, nargs);
 }
 #endif  // CYTHON_FAST_PYCCALL
 
